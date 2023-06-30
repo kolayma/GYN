@@ -1,17 +1,17 @@
-var modal = document.getElementById("myModal");
-var openModalBtn = document.getElementById("openModal");
-var closeModalBtn = document.getElementsByClassName("close")[0];
+let modal = document.getElementById('myModal')
+let openModalBtn = document.getElementById('openModal')
+let closeModalBtn = document.getElementsByClassName('close')[0]
 
-openModalBtn.onclick = function() {
-  modal.style.display = "block";
+openModalBtn.onclick = function () {
+  modal.style.display = 'block'
 }
 
-closeModalBtn.onclick = function() {
-  modal.style.display = "none";
+closeModalBtn.onclick = function () {
+  modal.style.display = 'none'
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.display = 'none'
   }
 }
