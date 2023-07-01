@@ -347,7 +347,7 @@ body {
 .telegram {
     padding-right: 20px;
 }
-
+/*модальное окно*/ 
 .modal {
     display: none;
     position: fixed;
@@ -359,13 +359,15 @@ body {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
   }
-  
+ 
 .modal-content {
-    background-color: #fefefe;
+    height: 480px;
+    width: 700px;   
     margin: 15% auto;
     padding: 20px;
+    border-radius: 30px;
     border: 1px solid #888;
-    width: 80%;
+    background-color: #FFF7ED;
   }
   
 .close {
@@ -382,7 +384,7 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
-/*модальное окно*/
+
 .appointment-title {
     margin-top: 0;
     margin-bottom: 28px;
@@ -396,7 +398,7 @@ body {
 .appointment-form {
     display: grid;
     grid-template-columns: 114px 74px 208px;
-    grid-gap: 19px 17px;
+    grid-gap: 53px 69px;
 }
   
 .appointment .field-group,
@@ -419,4 +421,5 @@ body {
   /* List */
 .appointment-info {
     color: #595959;
+    margin-bottom: 20px;
 }
