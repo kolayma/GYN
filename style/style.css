@@ -82,14 +82,15 @@ body {
     margin-right: 0.5em;
 }
 .logo {
-    /* font-family: "Comforter"; 
+    font-family: "Comforter"; 
     font-weight: 500;
-    font-size: 32px; */
-    width: 150px;
-    height: 100px; 
-    padding-left: 20px;
-    background-image: url("/img/gyn3.svg");
+    font-size: 38px; 
+    padding-left: 40px;
+    /* width: 150px;
+    height: 100px;     
+    background-image: url("/img/logo1.png");
     background-repeat: no-repeat;
+    background-size: contain; */
 }
 .horizontal_header {
     position: absolute;

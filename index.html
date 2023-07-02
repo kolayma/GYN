@@ -21,9 +21,7 @@
         <header class="header">
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <div class="logo">
-
-                    </div>
+                    <div class="logo">Лебедева Екатерина</div>
                 </li>
                 <li class="navigation-item">
                     <a href="#about" class="navigation-link">Обо мне</a>
@@ -64,7 +62,7 @@
             <div class="aboutbox">
                 <div class="about_rectangle">
                     <div class="rectangle_grey_about">
-                        <img class="photo_about" src="/img/photo_about.jpg" alt="фото мастера маникюра">
+                        <img class="photo_about" src="/img/photo_grey.jpg" alt="фото мастера маникюра">
                     </div>
                     <div class="rectangle_clear"></div>
                 </div>
@@ -259,7 +257,7 @@
             </div>
         </section>
         <footer id="contact" class="footer">
-            <p class="address">Адрес: г. Южно-Сахалинск, ул. Ленина 246А</p>
+            <p class="address">Адрес: г. Южно-Сахалинск, ул. Ленина 246А, кабинет 405</p>
             <ul class="socialmedia">
                 <li class="social_item">
                     <a href="#" class="instagram">
@@ -340,38 +338,6 @@
             </section>
         </div>
     </div>
-
-    <script>
-        async function submitForm(event) {
-            event.preventDefault(); // отключаем перезагрузку/перенаправление страницы
-            try {
-                // Формируем запрос
-                const response = await fetch(event.target.action, {
-                    method: 'POST',
-                    body: new FormData(event.target)
-                });
-                // проверяем, что ответ есть
-                if (!response.ok) throw (`Ошибка при обращении к серверу: ${response.status}`);
-                // проверяем, что ответ действительно JSON
-                const contentType = response.headers.get('content-type');
-                if (!contentType || !contentType.includes('application/json')) {
-                    throw ('Ошибка обработки. Ответ не JSON');
-                }
-                // обрабатываем запрос
-                const json = await response.json();
-                if (json.result === "success") {
-                    // в случае успеха
-                    alert(json.info);
-                } else {
-                    // в случае ошибки
-                    console.log(json);
-                    throw (json.info);
-                }
-            } catch (error) { // обработка ошибки
-                alert(error);
-            }
-        }
-    </script>
 </body>
 
 </html>
