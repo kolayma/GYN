@@ -56,7 +56,7 @@ if (!error_get_last()) {
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
-    $mail->Body = $body;    
+    $mail->Body = $body; 
     
     // Проверяем отправленность сообщения
     if ($mail->send()) {
@@ -75,7 +75,6 @@ if (!error_get_last()) {
 }
 
 // Отправка результата
-header('Content-Type: application/json');
-echo json_encode($data);
+header('location: thankyou.html');
 
 ?>
