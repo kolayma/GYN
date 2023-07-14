@@ -76,5 +76,6 @@ if (!error_get_last()) {
 
 // Отправка результата
 header('location: thankyou.html');
+echo json_encode($data);
 
 ?>
