@@ -85,11 +85,6 @@ body {
   font-weight: 500;
   font-size: 38px;
   padding-left: 40px;
-  /* width: 150px;
-    height: 100px;     
-    background-image: url("/img/logo1.png");
-    background-repeat: no-repeat;
-    background-size: contain; */
 }
 .horizontal_header {
   position: absolute;
@@ -138,19 +133,10 @@ body {
   background-color: #f0d3a8;
   cursor: pointer;
 }
-.rectangle_grey {
-  position: absolute;
-  top: -60px;
-  right: 60px;
-  width: 315px;
-  height: 392px;
-  background-color: #d9d9d9;
-  z-index: 1;
-}
 .photo_main {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -42px;
+  left: 702px;
   width: 315px;
   height: 392px;
   z-index: 1;
@@ -194,19 +180,10 @@ body {
 .about_rectangle {
   position: relative;
 }
-.rectangle_grey_about {
-  position: absolute;
-  top: -60px;
-  left: 60px;
-  width: 315px;
-  height: 392px;
-  background-color: #d9d9d9;
-  z-index: 1;
-}
 .photo_about {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -45px;
+  left: 49px;
   width: 315px;
   height: 392px;
   z-index: 1;
@@ -339,21 +316,51 @@ body {
   border-left: none;
 }
 .footer {
+  display: flex;
   height: 200px;
   background: #ffeccf;
   padding: 40px;
 }
-.address {
-  padding-bottom: 20px;
+.schedule {
+  margin-left: 120px;
+}
+.signup {
+  margin-left: 200px;
+}
+.phone {
+  display: flex;
+  align-items: center;
+}
+.contacts_phone {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 700;
+}
+.whatsapp {
+  margin-left: 20px;
 }
 .socialmedia {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.instagram {
-  padding-right: 20px;
+.contacts_title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
-.telegram {
-  padding-right: 20px;
+.contacts_text {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.contacts_text_mark {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400;
+  color: red;
 }
 /*модальное окно*/
 .modal {
@@ -450,4 +457,383 @@ body {
   font-family: 'Roboto';
   font-weight: normal;
   font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .site-container, .header, .horizontal_main, .horizontal_header, .horizontal_price, .horizontal_examples {
+    max-width: 960px;    
+  }
+  .horizontal_header {
+    left: 0;
+  }
+  .branch {
+    left: -33px;
+  } 
+  .horizontal_examples {
+    width: 920px;
+  }
+  .horizontal_main {
+    width: 920px;
+  } 
+  .photo_main {
+    top: -42px;
+    left: 511px;
+  }
+  .horizontal_about {
+    width: 922px;
+    right: -2px;
+  }
+  .horizontal_price {
+    width: 920px;
+  }
+  .about_text {
+    margin-left: 95px;
+  }
+  .aboutme_title {
+    padding-right: 182px;
+  }
+  .signup {
+    margin-left: 145px;
+  }
+  .contacts_text {
+    margin-bottom: 0;
+  }
+} 
+@media (max-width: 992px) {
+  .site-container, .header, .horizontal_header {
+    max-width: 760px;  
+  }
+  .horizontal_main, .horizontal_about, .horizontal_price, .horizontal_examples {
+    width: 720px;
+  }
+  .logo {
+    font-weight: 400;
+    font-size: 28px;
+    padding: 0 0 0 20px;
+  }
+  .navigation-link {
+    font-size: 20px;
+  }
+  .rectangle_clear {
+    width: 280px;
+    height: 350px;
+  }
+  .main {
+    padding: 0 40px 30px 40px;
+  }
+  .photo_main {
+    top: -82px;
+    left: 323px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .about {
+    padding-top: 10px;
+  }
+  .about_text {
+    margin-left: 87px;
+  }
+  .photo_about {
+    width: 280px;
+    height: 350px;
+  }
+  .aboutme_title {
+    font-size: 28px;
+    padding: 0 92px 20px 0;
+    font-weight: bold;
+  }
+  .aboutme_text {
+    font-size: 20px;
+    width: 345px;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 2fr);
+}
+.gallerybox {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+.lak {
+  display: none;
+} 
+.footer {
+  padding: 20px;
+}
+.contacts {
+  margin-right: 20px;
+  max-width: 300px;
+}
+.contacts_text {
+  margin-bottom: 11px;
+}
+.schedule {
+  margin: 0;
+}
+.signup {
+  margin-left: 90px;
+}
+}
+@media (max-width: 768px) {
+.site-container, .header, .horizontal_header {
+  max-width: 660px;  
+}
+.horizontal_main, .horizontal_about, .horizontal_price, .horizontal_examples {
+  width: 620px;
+}
+.logo {
+  font-size: 22px;
+  padding: 0;
+}
+.navigation-list {
+  padding: 20px;
+}
+.navigation-item {
+  padding: 0;
+}
+.navigation-link {
+  font-size: 18px;
+}
+.rectangle_clear {
+  width: 240px;
+  height: 300px;
+}
+.photo_main {
+  width: 240px;
+  height: 300px;
+  position: absolute;
+  top: -34px;
+  left: 309px;
+}
+.photo_about {
+  width: 240px;
+  height: 300px;
+  top: -33px;
+  left: 35px;
+}
+.aboutme_text {
+  font-size: 16px;
+  width: 288px;
+}
+.aboutme_title {
+  font-size: 24px;
+  padding-bottom: 12px;
+}
+.aboutbox {
+  padding-bottom: 50px;
+}
+.gallery {
+  padding-left: 25px;
+}
+.pricelist_list {
+  font-size: 20px;
+}
+.lak {
+  display: none;
+} 
+.signup {
+  margin-left: 40px;
+}
+.contacts {
+  margin-right: 0;
+}
+@media (max-width: 576px) {
+.site-container, .header, .horizontal_header {
+   width: 95%;  
+  }
+.horizontal_about, .horizontal_main, .horizontal_price, .horizontal_examples {
+  max-width: 505px;
+  }
+.aboutme {
+  display: none;
+}
+.logo {
+  font-size: 26px;
+}
+.navigation-link {
+  font-size: 22px;
+} 
+.header {
+  padding-bottom: 0;
+}
+.rectangle_clear {
+  width: 216px;
+  height: 270px;
+}
+.photo_main {
+  width: 201px;
+  height: 253px;
+  top: -13px;
+  left: 234px;
+}
+.button {
+  width: 180px;
+}
+.about {
+  padding-left: 15px;
+}
+.photo_about {
+  width: 216px;
+  height: 270px;
+  top: -23px;
+  left: 25px;
+}
+.aboutme_text {
+  overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 15;
+	-webkit-box-orient: vertical;
+  font-size: 18px;
+  width: 240px;
+  height: 270px;
+}
+.about_text {
+  margin-left: 50px;
+}
+.examples_title {
+  font-size: 26px;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+.gallerybox {
+  width: 400px;
+  height: 400px;
+}
+.laks {
+  display: none;
+}
+.pricelist_list {
+  padding: 0 40px 0 40px;
+  font-size: 22px;
+}
+.contacts_text {
+  font-size: 18px;
+}
+.contacts_phone {
+  font-size: 18px;
+}
+.contacts_text_mark {
+  font-size: 18px;
+}
+.telegram {
+  width: 32px;
+  height: 36px;
+}
+.whatsapp {
+  width: 32px;
+  height: 36px;
+}
+.instagram {
+  width: 46px;
+  height: 37px;
+}
+}
+@media (max-width: 480px) {
+  .site-container, .header, .horizontal_header {
+    width: 95%;  
+  }
+.horizontal_main, .horizontal_about, .horizontal_price, .horizontal_examples {
+    max-width: 412px;
+}
+.main {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 321px;
+}
+.photo_main {
+  position: absolute;
+  width: 225px;
+  height: 280px;
+  top: -59px;
+  left: 43px;
+  order: 1;
+}
+.rectangle_clear {
+  position: absolute;
+  width: 225px;
+  height: 280px;
+  top: -30px;
+  left: 82px;
+  order: -1;
+} 
+.mainbox_rectangle {
+  padding-bottom: 390px;
+}
+.title {
+  position: absolute;
+  bottom: 56px;
+  left: 42px;
+  /* order: 2; */
+}
+.button {
+  position: absolute;
+
+  top: 301px;
+  left: 87px;
+  /* order: 3; */
+}
+.branch_about_down {
+  left: -43px;
+}
+.branch_examples_up {
+  right: -26px;
+}
+.photo_about {
+  position: absolute;
+  width: 225px;
+  height: 280px;
+  top: -350px;
+  left: 69px;
+}
+.about_frame {
+  position: absolute;
+  width: 225px;
+  height: 280px;
+  top: -322px;
+  left: 110px;
+}
+.about_text {
+  margin-left: 0;
+}
+.aboutme_text {
+  width: 373px;
+  height: 294px;
+}
+.aboutme_title {
+  padding-right: 156px;
+}
+.gallery {
+  padding-right: 20px;
+}
+.pricelist_list {
+  padding: 0 20px 0 20px;
+}
+.footer {
+  display: block;
+  height: 350px; 
+}
+.contacts {
+  max-width: 400px;
+}
+.phone {
+  padding-bottom: 10px;
+}
+.contacts_text_mark {
+  padding-bottom: 10px;
+}
+.signup {
+  margin-left: 0;
+}
+.socialmedia {
+  justify-content: flex-start;
+}
+.social_item {
+  padding-left: 10px;
+}
+}
 }
