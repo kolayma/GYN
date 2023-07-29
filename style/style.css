@@ -836,4 +836,89 @@ body {
   padding-left: 10px;
 }
 }
+@media (max-width: 425px) {
+.site-container { 
+  width: 95%;  
+}
+.horizontal_header {
+  top: 0;
+  left: 17px;
+  height: 58px;
+}
+.navigation-list {
+  padding: 15px;
+}
+.logo {
+  font-size: 20px;
+}
+.navigation-link {
+  font-size: 20px;
+}
+.horizontal_main {
+  max-width: 360px;
+}
+.horizontal_about, .horizontal_price, .horizontal_examples {
+  max-width: 378px;
+}
+.branch, .branch_about_down, .branch_about_up, .branch_examples_down, .branch_examples_up, .branch_main_down, .branch_main_up, .branch_price_up {
+  width: 100px;
+  height: 100px;
+}
+.branch {
+  top: 19px;
+  left: -19px;
+}
+.title {
+  font-size: 22px;
+}
+.button {
+  width: 155px;
+  height: 50px;
+}
+.branch_main_up {
+  top: -62px;
+  right: -57px;
+}
+.branch_main_down {
+  top: 45px;
+  left: -54px;
+}
+.horizontal_about {
+  width: 378px;
+  right: -16px;
+}
+.branch_about_up {
+  top: -58px;
+  right: -54px;
+}
+.branch_about_down {
+  top: 46px;
+  left: -px;
+}
+.gallerybox {
+  width: 380px;
+  height: 380px;
+}
+.horizontal_examples {
+  margin-left: 23px;
+}
+.branch_examples_up {
+  top: -62px;
+  right: -15px;
+}
+.branch_examples_down {
+  top: 39px;
+  left: -15px;
+}
+.pricelist_title {
+  font-size: 26px;
+}
+.pricelist_list {
+  font-size: 18px;
+}
+.branch_price_up {
+  top: -61px;
+  right: -15px;
+}
+}
 }
